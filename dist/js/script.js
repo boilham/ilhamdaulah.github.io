@@ -30,7 +30,7 @@ hamburger.addEventListener('click', function() {
 window.addEventListener('click', function(e){
     if(e.target != hamburger && e.target != navMenu){
         hamburger.classList.remove('hamburger-active');
-    navMenu.classList.add('hidden');
+        navMenu.classList.add('hidden');
     }
 });
 
@@ -54,4 +54,4 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = true;
 } else {
       darkToggle.checked = false;   
-  }
+  };
